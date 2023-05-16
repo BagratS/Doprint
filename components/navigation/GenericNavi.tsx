@@ -1,5 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import MenutItemList from "./MenuItemList";
+import Link from "next/link";
 
 function GenericNavi() {
   return (
@@ -18,7 +19,9 @@ function GenericNavi() {
         items={["Visit Help Center", "Contact Live Support"]}
       />
       <Button>MyAccount</Button>
-      <Button background="rgb(5, 166, 190)">Print Now</Button>
+      <Link href='/print-now'>
+        <Button background="rgb(5, 166, 190)">Print Now</Button>
+      </Link>
       <MenutItemList
         name="Become a Partner"
         items={[
